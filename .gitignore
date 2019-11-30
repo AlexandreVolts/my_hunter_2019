@@ -1,0 +1,4 @@
+*~
+*.o
+my_hunter
+lib/my/libmy.a
