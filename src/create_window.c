@@ -11,7 +11,7 @@
 extern const unsigned short WINDOW_WIDTH;
 extern const unsigned short WINDOW_HEIGHT;
 extern const unsigned short BITS_PER_PIXEL;
-extern const char TITLE[];
+extern const char *TITLE;
 
 static void destroy_window(window_t *window)
 {

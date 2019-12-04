@@ -7,9 +7,13 @@
 
 #pragma once
 
+#include "duck.h"
 #include "window.h"
 
 typedef struct game
 {
+    duck_t *duck;
     window_t window;
+    sfSprite *duck_skin;
+    sfClock *clock;
 } game_t;

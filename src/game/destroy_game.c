@@ -9,6 +9,8 @@
 
 game_t *destroy_game(game_t *game)
 {
+    sfSprite_destroy(game->duck_skin);
+    sfClock_destroy(game->clock);
     game->window.destroy(&game->window);
     return (game);
 }

@@ -13,10 +13,15 @@ LIB_DIR =	lib/my/
 
 SRC	=	$(DIR)main.c			\
 		$(DIR)constants.c		\
+		$(DIR)create_duck.c		\
+		$(DIR)create_sprite.c		\
 		$(DIR)create_window.c		\
+		$(DIR)destroy_sprite.c		\
 		$(DIR)game/create_game.c	\
 		$(DIR)game/destroy_game.c	\
-		$(DIR)game/render_game.c
+		$(DIR)game/render_game.c	\
+		$(DIR)tools/get_rnd_nbr.c	\
+		$(DIR)tools/get_rnd_f_nbr.c
 
 CFLAGS	=	-Wall -Wextra -I ./$(INC_DIR) -I ./$(LIB_DIR)$(INC_DIR)
 
