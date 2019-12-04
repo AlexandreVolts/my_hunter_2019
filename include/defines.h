@@ -8,3 +8,4 @@
 #pragma once
 
 #define WINDOW game->window.window
+#define DUCK(x) game->ducks[x]

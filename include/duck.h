@@ -21,6 +21,7 @@ struct duck
     float time_before_next_frame;
     unsigned short current_animation;
     unsigned short nb_animation;
+
     duck_t *(*update)(struct duck *duck, float delta);
     duck_t *(*move)(struct duck *duck, float delta);
     duck_t *(*draw)(struct duck *duck, sfRenderWindow *window);

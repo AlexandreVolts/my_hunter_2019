@@ -12,8 +12,8 @@
 extern const unsigned short DUCK_WIDTH;
 extern const unsigned short DUCK_HEIGHT;
 extern const unsigned short WINDOW_HEIGHT;
-static const sfVector2u MIN_SPEED = {25, 50};
-static const sfVector2u MAX_SPEED = {50, 100};
+static const sfVector2u MIN_SPEED = {75, 25};
+static const sfVector2u MAX_SPEED = {100, 50};
 static const float MIN_SCALE = 0.5;
 static const float MAX_SCALE = 2;
 static const unsigned short SCALE_PRECISION = 10;

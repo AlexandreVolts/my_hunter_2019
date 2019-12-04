@@ -6,11 +6,13 @@
 */
 
 #include "game.h"
+#include "prototypes.h"
 
 game_t *destroy_game(game_t *game)
 {
+    game->window.destroy(&game->window);
     sfSprite_destroy(game->duck_skin);
     sfClock_destroy(game->clock);
-    game->window.destroy(&game->window);
+    destroy_duck_array(game->ducks);
     return (game);
 }

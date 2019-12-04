@@ -15,9 +15,9 @@ game_t *create_game(game_t *game)
 {
     create_window(&game->window);
     game->duck_skin = create_sprite(DUCK_SPRITE_PATH);
-    game->duck = create_duck(game->duck_skin);
+    game->ducks = create_duck_array(game->duck_skin);
     game->clock = sfClock_create();
-    if (!game->duck)
+    if (!game->ducks)
         return (NULL);
     return (game);
 }

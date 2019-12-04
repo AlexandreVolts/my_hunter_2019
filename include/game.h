@@ -12,7 +12,7 @@
 
 typedef struct game
 {
-    duck_t *duck;
+    duck_t **ducks;
     window_t window;
     sfSprite *duck_skin;
     sfClock *clock;

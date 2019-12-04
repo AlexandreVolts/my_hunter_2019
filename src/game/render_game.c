@@ -24,8 +24,10 @@ game_t *render_game(game_t *game)
                 sfRenderWindow_close(WINDOW);
         }
         sfRenderWindow_clear(WINDOW, sfBlack);
-        game->duck->update(game->duck, delta);
-        game->duck->draw(game->duck, WINDOW);
+        for (int i = 0; DUCK(i) != NULL; i++) {
+            DUCK(i)->update(DUCK(i), delta);
+            DUCK(i)->draw(DUCK(i), WINDOW);
+        }
         sfRenderWindow_display(WINDOW);
     }
     return (game);
